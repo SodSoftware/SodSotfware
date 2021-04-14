@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{background-color:rgb(221,223,227)}</string>
+  </property>
+  <widget class="QWidget" name="m_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>84</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>84</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>84</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color:rgb(234,234,234)
+}</string>
+   </property>
+   <widget class="QPushButton" name="file_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>164</y>
+      <width>84</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/file1.ico</normaloff>:/file1.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seg_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>269</y>
+      <width>84</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/seg2.ico</normaloff>:/seg2.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="process_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>374</y>
+      <width>84</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/pro2.ico</normaloff>:/pro2.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tool_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>479</y>
+      <width>84</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/tool2.ico</normaloff>:/tool2.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>584</y>
+      <width>84</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/set2.ico</normaloff>:/set2.ico</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="m_2">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>0</y>
+     <width>182</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="origin_page">
+    <property name="minimumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color:rgb(221,223,227)
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="file_page">
+    <property name="minimumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color:rgb(234,234,234)
+}</string>
+    </property>
+    <widget class="QPushButton" name="open_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>164</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>打开</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>269</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="saveas_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>374</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>另存为</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>64</width>
+       <height>64</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="aboutas_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>479</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>关于我们</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="seg_page">
+    <property name="minimumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color:rgb(234,234,234)
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="pro_page">
+    <property name="minimumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color:rgb(234,234,234)
+}</string>
+    </property>
+    <widget class="QPushButton" name="pre_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>164</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>预处理</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="last_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>269</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>后处理</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="magic_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>374</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>仙女棒</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tool_page">
+    <property name="minimumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>182</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color:rgb(234,234,234)
+}</string>
+    </property>
+    <widget class="QPushButton" name="pencil_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>264</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>画笔</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="eraser_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>369</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>橡皮</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="magnifier_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>474</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>放大镜</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="set_page">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(234,234,234)</string>
+    </property>
+    <widget class="QPushButton" name="language_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>264</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>语言</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="speed_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>369</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>主题</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>474</y>
+       <width>182</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font-family:'黑体';font-size:22px;border:none}QPushButton:hover{background-color:rgb(13,41,104)}QPushButton:checked{background-color:rgb(13,41,104)}</string>
+     </property>
+     <property name="text">
+      <string>加速</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="m_3">
+   <property name="geometry">
+    <rect>
+     <x>1548</x>
+     <y>0</y>
+     <width>372</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QStackedWidget{
+	background-color:rgb(234,234,234)
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="origin_page_2">
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color:rgb(234,234,234)
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color:rgb(234,234,234)
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="m_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>250</y>
+     <width>873</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color:rgb(234,234,234)
+}</string>
+   </property>
+   <widget class="QPushButton" name="left_btn">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>430</y>
+      <width>38</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/left1.ico</normaloff>:/left1.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>48</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="right_btn">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>430</y>
+      <width>38</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/right2.ico</normaloff>:/right2.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="top_btn">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>10</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image/image.qrc">
+      <normaloff>:/newwin.ico</normaloff>:/newwin.ico</iconset>
+    </property>
+   </widget>
+   <widget class="GraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>11</y>
+      <width>761</width>
+      <height>461</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>graphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image/image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
