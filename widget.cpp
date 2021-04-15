@@ -7,6 +7,7 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     this->status = -1;//表示没有一级菜单被按下
+    this->status2 = -1;
     this->setWindowTitle("分割软件");
 
     int x = this->x();
@@ -44,14 +45,63 @@ Widget::Widget(QWidget *parent) :
     //ui->m_2->->setGeometry(QRectF(94,0,182,980));
     ui->m_2->setStyleSheet("QWidget{background-color:rgb(234,234,234)}");
 
+ /*
+  * 一级菜单槽函数
+ */
     connect(ui->file_btn,&QPushButton::clicked,this,&Widget::file_switchPage);
     connect(ui->seg_btn,&QPushButton::clicked,this,&Widget::seg_switchPage);
     connect(ui->process_btn,&QPushButton::clicked,this,&Widget::process_switchPage);
     connect(ui->tool_btn,&QPushButton::clicked,this,&Widget::tool_switchPage);
     connect(ui->set_btn,&QPushButton::clicked,this,&Widget::set_switchPage);
 
+/*
+*   二级菜单槽函数
+*/
+    connect(ui->pre_btn,&QPushButton::clicked,this,&Widget::pre_switchPage);
+    connect(ui->last_btn,&QPushButton::clicked,this,&Widget::last_switchPage);
+    connect(ui->eraser_btn,&QPushButton::clicked,this,&Widget::toolset_switchPage);
+    connect(ui->magnifier_btn,&QPushButton::clicked,this,&Widget::toolset_switchPage);
+    connect(ui->pencil_btn,&QPushButton::clicked,this,&Widget::toolset_switchPage);
+    connect(ui->language_btn,&QPushButton::clicked,this,&Widget::subset_switchPage);
+    connect(ui->speed_btn,&QPushButton::clicked,this,&Widget::subset_switchPage);
+    connect(ui->theme_btn,&QPushButton::clicked,this,&Widget::subset_switchPage);
 }
-
+void Widget::subset_switchPage()
+{
+    if(this->status2 == -1)
+    {
+        ui->m_3->setCurrentIndex(3);//翻页操作
+        this->status += 1;
+    }
+   //应该在2界面加一个关闭按钮，关闭后status变成-1
+}
+void Widget::toolset_switchPage()
+{
+    if(this->status2 == -1)
+    {
+        ui->m_3->setCurrentIndex(4);//翻页操作
+        this->status += 1;
+    }
+   //应该在2界面加一个关闭按钮，关闭后status变成-1
+}
+void Widget::last_switchPage()
+{
+    if(this->status2 == -1)
+    {
+        ui->m_3->setCurrentIndex(2);//翻页操作
+        this->status += 1;
+    }
+   //应该在2界面加一个关闭按钮，关闭后status变成-1
+}
+void Widget::pre_switchPage()
+{
+    if(this->status2 == -1)
+    {
+        ui->m_3->setCurrentIndex(1);//翻页操作
+        this->status += 1;
+    }
+   //应该在1界面加一个关闭按钮，关闭后status变成-1
+}
 void Widget::file_switchPage()
 {
     if(this->status == -1)
