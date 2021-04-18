@@ -7,6 +7,10 @@
 #include <QGraphicsPixmapItem>
 #include <QIODevice>
 #include <QMessageBox>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include<opencv2/opencv.hpp>
+#include <QHBoxLayout>
 #include "graphicsview.h"
 namespace Ui {
 class Widget;
@@ -30,12 +34,9 @@ public:
      * 设置页--
      *
      * */
-    void file_switchPage();
-    void seg_switchPage();
-    void process_switchPage();
-    void tool_switchPage();
-    void set_switchPage();
-    int status;
+
+    int status;  //标志位->左侧菜单栏状态
+    int status2; //标志位->右侧功能栏状态
 private slots:
     void on_file_btn_clicked();
 
@@ -44,6 +45,18 @@ private slots:
     void on_save_btn_clicked();
 
     void on_saveas_btn_clicked();
+    //一级菜单槽函数
+    void file_switchPage();
+    void seg_switchPage();
+    void process_switchPage();
+    void tool_switchPage();
+    void set_switchPage();
+    //二级菜单槽函数
+    void pre_switchPage();
+    void last_switchPage();
+    void toolset_switchPage();
+    void subset_switchPage();
+
 
 private:
     Ui::Widget *ui;

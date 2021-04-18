@@ -23,3 +23,18 @@ FORMS    += widget.ui
 
 RESOURCES += \
     image/image.qrc
+
+INCLUDEPATH += D:\opencv\install\install\include\
+D:\opencv\opencv\build\include\opencv2\
+D:\opencv\opencv\build\bin\
+D:\Vulkan\1.1.106.0\Include\
+D:\ncnn\ncnn-20210322-windows-vs2017\x64\include\ncnn\
+
+
+LIBS +=
+#D:\ncnn\ncnn-20210322-windows-vs2017\x64\lib\
+#D:\Vulkan\1.1.106.0\Lib\
+D:\opencv\install\install\x86\mingw\bin\libopencv_*.dll
+-lopencv_world320
+-lopencv_world320d
+
