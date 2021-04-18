@@ -9,10 +9,6 @@
         <file>set2.ico</file>
         <file>tool2.ico</file>
         <file>pro2.ico</file>
-        <file>打开.png</file>
-        <file>保存.png</file>
-        <file>关于我们.png</file>
-        <file>另存为.png</file>
         <file>file1.ico</file>
         <file>left.ico</file>
         <file>right.ico</file>
@@ -20,5 +16,7 @@
         <file>right1.ico</file>
         <file>right2.ico</file>
         <file>newwin.ico</file>
+        <file>lineleft.ico</file>
+        <file>lineright.ico</file>
     </qresource>
 </RCC>
