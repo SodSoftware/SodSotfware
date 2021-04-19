@@ -1,14 +1,14 @@
 #include "u2net.h"
 #define WIDTH 320
 #define HEIGHT 320
-
+#include "net.h"
 
 
 
 U2net::U2net(bool gpu_available)
 {
 	ncnn::create_gpu_instance();
-	net = new ncnn::Net;
+	net = new ncnn::Net();
 	net->set_vulkan_device(0);
 	net->opt.use_vulkan_compute = true;
 	net->load_param("u2netp_sim-opt.param");
@@ -60,6 +60,9 @@ void U2net::saliency_detection(cv::Mat & src, cv::Mat & dst)
     add_alpha(result, mask, dst);
 }
 
+/*
+	返回RGBA Mat
+*/
 void U2net::add_alpha(cv::Mat & src, cv::Mat & alpha, cv::Mat & dst)
 {
 	dst = cv::Mat(src.rows, src.cols, CV_8UC4);
@@ -69,9 +72,9 @@ void U2net::add_alpha(cv::Mat & src, cv::Mat & alpha, cv::Mat & dst)
 	//分离通道
 	cv::split(src, srcChannels);
 
-	dstChannels.push_back(srcChannels[0]);
-	dstChannels.push_back(srcChannels[1]);
 	dstChannels.push_back(srcChannels[2]);
+	dstChannels.push_back(srcChannels[1]);
+	dstChannels.push_back(srcChannels[0]);
 	//添加透明度通道
 	dstChannels.push_back(alpha);
 	//合并通道
