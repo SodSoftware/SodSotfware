@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/file.ico</file>
+        <file>image/file1.ico</file>
+        <file>image/image.qrc</file>
+        <file>image/left.ico</file>
+        <file>image/left1.ico</file>
+        <file>image/lineleft.ico</file>
+        <file>image/lineright.ico</file>
+        <file>image/newwin.ico</file>
+        <file>image/pro2.ico</file>
+        <file>image/process.ico</file>
+        <file>image/right.ico</file>
+        <file>image/right1.ico</file>
+        <file>image/right2.ico</file>
+        <file>image/seg.ico</file>
+        <file>image/seg2.ico</file>
+        <file>image/set.ico</file>
+        <file>image/set2.ico</file>
+        <file>image/tool.ico</file>
+        <file>image/tool2.ico</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
