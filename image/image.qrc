@@ -16,5 +16,7 @@
         <file>right1.ico</file>
         <file>right2.ico</file>
         <file>newwin.ico</file>
+        <file>lineleft.ico</file>
+        <file>lineright.ico</file>
     </qresource>
 </RCC>
